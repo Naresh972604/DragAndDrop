@@ -1,0 +1,16 @@
+button{
+    width: 100%;
+}
+#control{
+    padding: 0px 15px;
+}
+.controlClass{
+    border: 1px solid #673ab7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #673ab7;
+    font-weight: 500;
+    cursor: grab;
+
+}

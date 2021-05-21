@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Preview</h1>
+<div mat-dialog-content>
+    <div class="container" style="padding: 30px;">
+        <div class="row">
+            <div class="col-md-12" *ngFor="let data of previewArr;">
+                <input type="text" class="form-control" id="{{data}}" placeholder="{{data}}" *ngIf="data.includes('Textbox')"/>
+                <select *ngIf="data.includes('Dropdown')" id="{{data}}" class="form-control">
+                    <option value="{{data}}">{{data}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</div>
